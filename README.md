@@ -2,12 +2,12 @@
 
 This is a personal portfolio project built with **Astro 5.8.0**, designed to showcase projects, professional experience, and technical skills. Developed with a modern, fast, and SEO-optimized approach using pure Astro without additional frameworks.
 
-## 🚀 Live Demo
+## Live Demo
 
-👉 [View Live Portfolio](https://your-domain.com)  
+[View Live Portfolio](https://your-domain.com)  
 _(Replace with your actual deployment link)_
 
-## 🖥️ Screenshots
+## Screenshots
 
 <details>
   <summary>🖼️ Desktop Screenshots</summary>
@@ -26,7 +26,7 @@ _(Replace with your actual deployment link)_
 </details>
 
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - [Astro](https://astro.build/) `v5.8.0` – Modern static site generator  
 - **HTML5 + CSS3** – Modular and semantic structure  
