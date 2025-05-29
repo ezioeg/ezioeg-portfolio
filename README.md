@@ -4,8 +4,7 @@ This is a personal portfolio project built with **Astro 5.8.0**, designed to sho
 
 ## Live Demo
 
-[View Live Portfolio](https://your-domain.com)  
-_(Replace with your actual deployment link)_
+[View Live Portfolio](https://your-domain.com)
 
 ## Screenshots
 
