@@ -25,7 +25,6 @@ _(Replace with your actual deployment link)_
   </p>
 </details>
 
----
 
 ## 🛠️ Technologies Used
 
@@ -33,7 +32,7 @@ _(Replace with your actual deployment link)_
 - **HTML5 + CSS3** – Modular and semantic structure  
 - **Markdown** – For blog and project content  
 - **TypeScript** – Type-safe JavaScript (optional based on configuration)
-- **Hosting** – Optimized for Netlify, Vercel, or GitHub Pages  
+- **Hosting** – Optimized for  Vercel or GitHub Pages  
 
 ## Installation
 
