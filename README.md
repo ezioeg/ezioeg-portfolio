@@ -1,48 +1,87 @@
-# Astro Starter Kit: Basics
+# Ezioeg Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+This is a personal portfolio project built with **Astro 5.8.0**, designed to showcase projects, professional experience, and technical skills. Developed with a modern, fast, and SEO-optimized approach using pure Astro without additional frameworks.
+
+## 🚀 Live Demo
+
+👉 [View Live Portfolio](https://your-domain.com)  
+_(Replace with your actual deployment link)_
+
+## 🖥️ Screenshots
+
+<details>
+  <summary>🖼️ Desktop Screenshots</summary>
+  <p>
+    <img src="https://github.com/user-attachments/assets/example-desktop-1.png" alt="Desktop Screenshot 1" width="600"/>
+    <img src="https://github.com/user-attachments/assets/example-desktop-2.png" alt="Desktop Screenshot 2" width="600"/>
+  </p>
+</details>
+
+<details>
+  <summary>📱 Mobile Screenshots</summary>
+  <p>
+    <img src="https://github.com/user-attachments/assets/example-mobile-1.png" alt="Mobile Screenshot 1" width="300"/>
+    <img src="https://github.com/user-attachments/assets/example-mobile-2.png" alt="Mobile Screenshot 2" width="300"/>
+  </p>
+</details>
+
+---
+
+## 🛠️ Technologies Used
+
+- [Astro](https://astro.build/) `v5.8.0` – Modern static site generator  
+- **HTML5 + CSS3** – Modular and semantic structure  
+- **Markdown** – For blog and project content  
+- **TypeScript** – Type-safe JavaScript (optional based on configuration)
+- **Hosting** – Optimized for Netlify, Vercel, or GitHub Pages  
+
+## Installation
+
+Install dependencies:
+
+```bash
+npm install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Running the Project
+### Local development:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+> Starts development server at: http://localhost:4321
 
-## 🧞 Commands
+### Build for production:
 
-All commands are run from the root of the project, from a terminal:
+```bash
+npm run build
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Preview production build locally:
 
-## 👀 Want to learn more?
+```bash
+npm run preview
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Deployment
+
+### Vercel
+1. Import Git repository in Vercel
+2. Keep default build settings
+3. Click Deploy
+
+###  GitHub Pages
+1. Run build:
+```bash
+npm run build
+```
+2. Commit the dist directory
+3. Configure GitHub Pages to deploy from dist folder
+> (Optional) Automate with gh-pages package
+
+## Contributions
+Contributions are welcome! If you want to improve the project, please create a fork and submit a pull request.
+
+## Contact
+For any questions or suggestions, feel free to contact me at [ezioeg@gmail.com].
