@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel/static";
 
 export default defineConfig({
     output: "static",
-    site: "https://ezioeg-portfolio.vercel.app",
+    adapter: vercel(),
 });
