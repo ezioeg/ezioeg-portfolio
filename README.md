@@ -6,25 +6,6 @@ This is a personal portfolio project built with **Astro 5.8.0**, designed to sho
 
 [View Live Portfolio](https://your-domain.com)
 
-## Screenshots
-
-<details>
-  <summary>🖼️ Desktop Screenshots</summary>
-  <p>
-    <img src="https://github.com/user-attachments/assets/example-desktop-1.png" alt="Desktop Screenshot 1" width="600"/>
-    <img src="https://github.com/user-attachments/assets/example-desktop-2.png" alt="Desktop Screenshot 2" width="600"/>
-  </p>
-</details>
-
-<details>
-  <summary>📱 Mobile Screenshots</summary>
-  <p>
-    <img src="https://github.com/user-attachments/assets/example-mobile-1.png" alt="Mobile Screenshot 1" width="300"/>
-    <img src="https://github.com/user-attachments/assets/example-mobile-2.png" alt="Mobile Screenshot 2" width="300"/>
-  </p>
-</details>
-
-
 ## Technologies Used
 
 - [Astro](https://astro.build/) `v5.8.0` – Modern static site generator  
