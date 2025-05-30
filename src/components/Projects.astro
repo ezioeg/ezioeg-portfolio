@@ -1,5 +1,4 @@
 ---
-// Datos de los proyectos
 const projects = [
     {
         id: 1,
@@ -140,7 +139,7 @@ const projects = [
         </div>
     </div>
 
-    <!-- Modal del Carousel -->
+    <!-- Carousel Modal -->
     <div id="carousel-modal" class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
@@ -205,7 +204,7 @@ const projects = [
         </div>
     </div>
 
-    <!-- Elementos decorativos -->
+    <!-- Decorative Elements -->
     <div class="decorative-terminal">
         <svg width="90" height="60" viewBox="0 0 90 60" fill="none">
             <rect
@@ -310,11 +309,11 @@ const projects = [
 </section>
 
 <script define:vars={{ projects }}>
-    // Estado del carousel
+    // Carousel State
     let currentProject = null;
     let currentImageIndex = 0;
 
-    // Elementos del DOM
+    // DOM Elements
     const modal = document.getElementById("carousel-modal");
     const modalTitle = document.getElementById("modal-title");
     const carouselImage = document.getElementById("carousel-image");
@@ -324,7 +323,7 @@ const projects = [
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
 
-    // Función para abrir el carousel
+    // Open Carousel
     function openCarousel(projectId) {
         currentProject = projects.find((p) => p.id === projectId);
         if (!currentProject) return;
@@ -337,7 +336,7 @@ const projects = [
         document.body.style.overflow = "hidden";
     }
 
-    // Función para cerrar el carousel
+    // Close Carousel
     function closeCarousel() {
         modal.classList.remove("active");
         document.body.style.overflow = "";
@@ -345,7 +344,7 @@ const projects = [
         currentImageIndex = 0;
     }
 
-    // Función para actualizar la imagen del carousel
+    // Update Carousel Image
     function updateCarouselImage() {
         if (!currentProject) return;
 
@@ -353,14 +352,14 @@ const projects = [
         carouselImage.alt = `${currentProject.title} - Imagen ${currentImageIndex + 1}`;
         imageCounter.textContent = `${currentImageIndex + 1} / ${currentProject.images.length}`;
 
-        // Actualizar thumbnails activos
+        // Update Active Thumbnails
         const thumbnails = thumbnailsContainer.querySelectorAll(".thumbnail");
         thumbnails.forEach((thumb, index) => {
             thumb.classList.toggle("active", index === currentImageIndex);
         });
     }
 
-    // Función para crear thumbnails
+    // Create Thumbnails
     function createThumbnails() {
         if (!currentProject) return;
 
@@ -377,7 +376,7 @@ const projects = [
         });
     }
 
-    // Función para ir a la imagen anterior
+    // Previous Image
     function prevImage() {
         if (!currentProject) return;
         currentImageIndex =
@@ -387,7 +386,7 @@ const projects = [
         updateCarouselImage();
     }
 
-    // Función para ir a la imagen siguiente
+    // Next Image
     function nextImage() {
         if (!currentProject) return;
         currentImageIndex =
@@ -399,7 +398,7 @@ const projects = [
 
     // Event listeners
     document.addEventListener("DOMContentLoaded", () => {
-        // Click en las imágenes de los proyectos (desktop)
+        // Click on project images (desktop)
         document
             .querySelectorAll(".project-image")
             .forEach((imageContainer) => {
@@ -411,13 +410,13 @@ const projects = [
                 });
             });
 
-        // Click en toda la card (móvil) - NUEVO
+        // Click on project card (mobile)
         document.querySelectorAll(".project-card").forEach((card, index) => {
             card.addEventListener("click", (e) => {
-                // Solo en móvil (cuando la imagen no es visible)
+                // Only on mobile (when the image is not visible)
                 const projectImage = card.querySelector(".project-image");
                 if (window.getComputedStyle(projectImage).display === "none") {
-                    // Prevenir que los links de los botones se activen
+                    // Prevent button links from activating
                     if (e.target.closest(".btn")) {
                         return;
                     }
@@ -427,17 +426,17 @@ const projects = [
             });
         });
 
-        // Cerrar modal
+        // Close modal
         closeBtn.addEventListener("click", closeCarousel);
         modal.addEventListener("click", (e) => {
             if (e.target === modal) closeCarousel();
         });
 
-        // Navegación del carousel
+        // Carousel Navigation
         prevBtn.addEventListener("click", prevImage);
         nextBtn.addEventListener("click", nextImage);
 
-        // Navegación con teclado
+        // Keyboard Navigation
         document.addEventListener("keydown", (e) => {
             if (!modal.classList.contains("active")) return;
 
@@ -613,7 +612,7 @@ const projects = [
         border-color: #6366f1;
     }
 
-    /* Modal y Carousel */
+    /* Modal & Carousel */
     .modal-overlay {
         position: fixed;
         inset: 0;
@@ -800,7 +799,7 @@ const projects = [
         object-fit: cover;
     }
 
-    /* Elementos decorativos */
+    /* Decorative Elements */
     .decorative-terminal {
         position: absolute;
         top: 20%;
@@ -835,28 +834,28 @@ const projects = [
         }
 
         .project-card {
-            grid-template-columns: 1fr; /* Layout de una columna */
-            cursor: pointer; /* NUEVO: Hacer toda la card clickeable */
-            height: auto; /* NUEVO: Altura automática */
+            grid-template-columns: 1fr; /* Layout of one column */
+            cursor: pointer; /* Make the entire card clickable */
+            height: auto; /* Auto height */
         }
 
-        /* NUEVO: Ocultar la imagen en móvil */
+        /* Hide image on mobile */
         .project-image {
             display: none;
         }
 
         .project-content {
             padding: 1.5rem;
-            justify-content: flex-start; /* NUEVO: Alinear contenido al inicio */
+            justify-content: flex-start; /* Align content to the start */
         }
 
         .project-title {
-            font-size: 1.25rem; /* NUEVO: Reducir tamaño de fuente */
+            font-size: 1.25rem; /* Reduce font size */
         }
 
         .project-description {
-            font-size: 0.9rem; /* NUEVO: Texto ligeramente más pequeño */
-            margin-bottom: 1rem; /* NUEVO: Reducir margen */
+            font-size: 0.9rem; /* Reduce font size */
+            margin-bottom: 1rem; /* Reduce margin */
         }
 
         .section-title {
@@ -865,13 +864,13 @@ const projects = [
 
         .project-actions {
             flex-direction: column;
-            margin-top: 0.5rem; /* NUEVO: Reducir margen superior */
+            margin-top: 0.5rem; /* Reduce margin top */
         }
 
         .btn {
             justify-content: center;
-            padding: 0.6rem 1.2rem; /* NUEVO: Reducir padding */
-            font-size: 0.9rem; /* NUEVO: Texto más pequeño */
+            padding: 0.6rem 1.2rem; /* Reduce padding */
+            font-size: 0.9rem; /* Reduce font size */
         }
 
         .decorative-terminal,
