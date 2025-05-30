@@ -4,7 +4,7 @@ This is a personal portfolio project built with **Astro 5.8.0**, designed to sho
 
 ## Live Demo
 
-[View Live Portfolio](ezioeg-portfolio.vercel.app)
+[View Live Portfolio](https://ezioeg-portfolio.vercel.app)
 
 ## Technologies Used
 
