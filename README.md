@@ -14,7 +14,7 @@ This is a personal portfolio project built with **Astro 5.8.0**, designed to sho
 - **TypeScript** – Type-safe JavaScript (optional based on configuration)
 - **Hosting** – Optimized for  Vercel or GitHub Pages  
 
-## Installation
+## Setup
 
 Install dependencies:
 
@@ -22,7 +22,7 @@ Install dependencies:
 npm install
 ```
 
-## Running the Project
+## Run
 ### Local development:
 
 ```bash
