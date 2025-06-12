@@ -10,8 +10,6 @@ This is a personal portfolio project built with **Astro 5.8.0**, designed to sho
 
 - [Astro](https://astro.build/) `v5.8.0` – Modern static site generator  
 - **HTML5 + CSS3** – Modular and semantic structure  
-- **Markdown** – For blog and project content  
-- **TypeScript** – Type-safe JavaScript (optional based on configuration)
 - **Hosting** – Optimized for  Vercel or GitHub Pages  
 
 ## Setup
