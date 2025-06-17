@@ -7,11 +7,18 @@ const projects = [
             "Aplicación móvil desarrollada con React Native CLI que permite explorar personajes y episodios de la serie Rick and Morty usando la API GraphQL oficial.",
         tags: ["React Native", "Zustand", "GraphQL API", "Apollo Client"],
         images: [
-            "/placeholder.svg?height=400&width=600",
-            "/placeholder.svg?height=400&width=600",
-            "/placeholder.svg?height=400&width=600",
-            "/placeholder.svg?height=400&width=600",
+            "/images/rick-and-morty/character-list-android.png",
+            "/images/rick-and-morty/character-list-ios.png",
+            "/images/rick-and-morty/character-details-android.png",
+            "/images/rick-and-morty/character-details-ios.png",
+            "/images/rick-and-morty/character-filters-android.png",
+            "/images/rick-and-morty/character-filters-ios.png",
+            "/images/rick-and-morty/episode-list-android.png",
+            "/images/rick-and-morty/episode-list-ios.png",
+            "/images/rick-and-morty/episode-details-android.png",
+            "/images/rick-and-morty/episode-details-ios.png",
         ],
+        previewImage: "/images/rick-and-morty/character-list-ios.png",
         codeUrl: "https://github.com/ezioeg/rick-and-morty",
         previewUrl: "#",
     },
@@ -34,6 +41,7 @@ const projects = [
             // "/images/mymovie-app/categories-ios.png",
             "/images/mymovie-app/search-ios.png",
         ],
+        previewImage: "/images/mymovie-app/home-hero-ios.png",
         codeUrl: "https://github.com/ezioeg/mymovie-app",
         previewUrl: "#",
     },
@@ -55,6 +63,7 @@ const projects = [
             "/images/pana-birra/cart-android.png",
             "/images/pana-birra/cart-ios.png",
         ],
+        previewImage: "/images/pana-birra/featured-ios.png",
         codeUrl: "https://github.com/ezioeg/pana-una-birra",
         previewUrl: "#",
     },
@@ -84,7 +93,7 @@ const projects = [
                     <article class="project-card">
                         <div class="project-image" data-project-id={project.id}>
                             <img
-                                src={project.images[4] || "/placeholder.svg"}
+                                src={project.previewImage || "/placeholder.svg"}
                                 alt={project.title}
                                 class="project-screenshot"
                             />
